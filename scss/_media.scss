@@ -1,0 +1,301 @@
+/*** media query styles ***/
+
+@media(min-width:1650px) {
+    .navbar .nav-item .nav-link {
+        font-size: 19px;
+    }
+    .tms-hero {
+        min-height: 950px;
+        padding-top: 210px;
+        h1 {
+            margin-bottom: 100px;
+        }
+    }
+    .tms-hero .inner-box p {
+        font-size: 26px;
+        line-height: 39px;
+    }
+    .small-title {
+        max-width: 563px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .card .card-content p {
+        font-size: 16px;
+    }
+    .news-box .box-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .tms-environment .container-fluid {
+        background-position: top 0px left 0;
+    }
+}
+
+@media(min-width:992px) {
+    .show-md {
+        display: none;
+    }
+}
+
+@media(min-width:768px) {
+    .show-sm {
+        display: none !important;
+    }
+}
+
+@media(max-width:1400.98px) {
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .navbar .nav-item .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar .navbar-brand {
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:1299.98px) {
+    .container-fluid {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .navbar .nav-item .nav-link img {
+        margin-right: 3px;
+    }
+    .tms-environment .container-fluid {
+        background-size: 500px auto;
+    }
+}
+
+@media(max-width:1199.98px) {
+    .box {
+        padding: 40px 35px;
+    }
+    .news-box .box-content {
+        padding: 30px 25px;
+    }
+    .tms-location h2 {
+        max-width: 90%;
+    }
+    .navbar .navbar-nav.ms-auto .nav-link {
+        padding: 6px 15px 5px 15px;
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .navbar.bg-light {
+        padding: 12px 0;
+        .navbar-collapse {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            z-index: 99;
+            padding: 30px 40px;
+        }
+        .nav-item .nav-link {
+            font-size: 22px;
+            padding: 15px 20px 15px 32px;
+            border-radius: 30px;
+        }
+    }
+    .card .card-content p {
+        min-height: 120px;
+    }
+    .tms-hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-position: top 0 left 0;
+        background-size: cover;
+        min-height: 1px;
+    }
+    .card .card-content p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 120px;
+    }
+    .tms-environment {
+        .pragraph {
+            font-size: 16px;
+        }
+    }
+    .box {
+        padding: 25px 20px;
+        p {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 30px;
+        }
+        a i {
+            font-size: 30px;
+        }
+    }
+    .tms-environment {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        &::after {
+            height: calc(100% - 210px);
+        }
+        .container-fluid {
+            background-size: 400px auto;
+            background-position: top 40px left -30px;
+        }
+        .env-img {
+            display: block;
+            margin: 50px auto 12px auto;
+            max-height: 500px;
+        }
+    }
+}
+
+@media (max-width:767.98px) {
+    .hidden-sm {
+        display: none !important;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .tms-hero .inner-box {
+        max-width: 400px;
+    }
+    .tms-hero .inner-box p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+    .tms-features .slick-slide .card h3 {
+        min-height: 100px;
+    }
+    .tms-environment h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .tms-environment .container-fluid {
+        background: none;
+    }
+    .tms-environment::after {
+        height: calc(50% - 90px);
+        background: $main-color url(../images/sec-bg1.png) no-repeat;
+        background-size: auto 350px;
+        background-position: bottom 40px center;
+    }
+    .tms-environment .pragraph {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .tms-environment .box {
+        margin-top: 20px;
+        padding: 40px;
+    }
+    .tms-location {
+        .show-sm {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 57px;
+        }
+    }
+    footer {
+        .container-fluid {
+            padding: 0;
+        }
+        .footer-logo {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .bottom-menu {
+            flex-flow: column-reverse;
+            text-align: center;
+            ul {
+                li {
+                    display: block;
+                    a {
+                        display: block;
+                        width: 100%;
+                        letter-spacing: 0.39px;
+                        padding: 15px 5px;
+                        border-top: 1px solid #DCDCDC;
+                        font-size: 20px;
+                        line-height: 39px;
+                    }
+                    /* &:last-child {
+                        border-bottom: 1px solid #DCDCDC;
+                    }*/
+                }
+            }
+            .tms-social {
+                margin-bottom: 50px;
+                a {
+                    margin: 0 7px; //
+                    i {
+                        font-size: 30px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin-top: 0;
+            flex-flow: column;
+            text-align: center;
+            padding-top: 80px;
+            p {
+                font-size: 16px;
+                font-weight: 200;
+                line-height: 28px;
+                margin-bottom: 50px;
+            }
+            img {
+                width: auto;
+                max-width: max-content;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .container-fluid {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tms-location h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .tms-location,
+    .tms-features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .small-title {
+        margin-bottom: 20px;
+    }
+    .tms-features .small-title {
+        margin-bottom: 30px;
+    }
+}

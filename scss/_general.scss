@@ -1,0 +1,427 @@
+/*** general style for all pages ****/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $main-color;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container-fluid {
+    padding-right: 95px;
+    padding-left: 95px;
+    &.tms-container {
+        max-width: 1700px;
+    }
+    &.tms-small-container {
+        max-width: 1630px;
+    }
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.gray-bg {
+    background: $gray-bg;
+}
+
+.dark-bg {
+    background: $main-color;
+}
+
+.blue-bg {
+    background: $blue;
+}
+
+.blue-light-bg {
+    background: #F2F4F8
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 66px
+}
+
+.small-title {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 30px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+
+/**** site cards style ****/
+
+.card {
+    border: 0;
+    transition: all 0.3s ease;
+    img {
+        width: 100%;
+    }
+    .card-content {
+        padding: 25px 30px 30px 30px;
+        h3 {
+            font-weight: 600;
+            font-size: 27px;
+            line-height: 36px;
+            small {
+                font-weight: 300;
+                font-size: 22px;
+                display: block;
+            }
+        }
+        p {
+            min-height: 170px;
+            font-size: 14px;
+        }
+        a {
+            color: $blue;
+            font-size: 18px;
+            line-height: 30px;
+            text-decoration: none !important;
+            i {
+                vertical-align: middle;
+                font-size: 13px;
+                margin-left: 5px;
+                &::before {
+                    font-weight: 900 !important;
+                }
+            }
+        }
+    }
+    &:hover {
+        background: $main-color;
+        color: #fff;
+        .card-content p {
+            font-weight: 200;
+        }
+    }
+}
+
+
+/**** tms boxes style ***/
+
+.box {
+    padding: 40px 45px;
+    p {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 200px;
+        margin-bottom: 50px;
+        max-height: 105px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    a {
+        color: #fff;
+        i {
+            font-size: 40px;
+            line-height: 0;
+            &::before {
+                line-height: 0;
+            }
+        }
+    }
+}
+
+
+/*** news block style ***/
+
+.news-box {
+    box-shadow: 3px 9px 21px #00000008;
+    transition: all 0.3s ease;
+    img {
+        width: 100%;
+    }
+    .box-content {
+        padding: 30px 65px 30px 30px;
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: $main-color
+        }
+    }
+    &:hover {
+        box-shadow: 0px 1px 20px 8px rgba(0, 0, 0, 0.12)
+    }
+}
+
+
+/**** tms-breadcrumbs style ***/
+
+.tms-breadcrumbs {
+    @media(min-width: 1650px) {
+        padding: 40px 0;
+        h2 {
+            font-size: 34px;
+        }
+    }
+    padding: 30px 0;
+    background: $main-color;
+    color: #fff;
+    h2 {
+        font-weight: 300;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+}
+
+
+/*** page main img style **/
+
+.tms-page-img {
+    @media(max-width: 1650px) {
+        img {
+            max-height: 550px;
+        }
+    }
+}
+
+
+/** paragraph-block style **/
+
+.paragraph-block {
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 35px;
+        max-width: 250px
+    }
+    p {
+        color: $copyright;
+        font-size: 16px;
+        line-height: 26px
+    }
+    .block-title {
+        font-size: 26px;
+        color: $blue;
+    }
+    &.big-text {
+        padding-top: 110px;
+        padding-bottom: 50px;
+        h3 {
+            font-size: 35px;
+            line-height: 47px;
+            width: 100%;
+            max-width: 454px;
+        }
+        p {
+            color: #000000;
+            @media(min-width: 1650px) {
+                font-size: 22px;
+                line-height: 35px;
+            }
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .d-flex {
+        margin-bottom: 60px;
+        img {
+            max-width: 95px;
+            margin-right: 40px;
+        }
+        p {
+            color: #707070;
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+    &.blue-light-bg {
+        padding-top: 60px;
+    }
+}
+
+
+/**** steps block style ***/
+
+.steps-block {
+    border-top: 1px solid rgba(112, 112, 112, 0.19);
+    padding-top: 70px;
+    padding-bottom: 100px;
+    .step {
+        padding-right: 60px;
+        .step-num {
+            color: rgba(21, 29, 51, 0.11);
+            font-size: 110px;
+            font-weight: 600;
+            line-height: 120px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            max-width: 215px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}
+
+
+/*** contact us block style ***/
+
+form {
+    .mb-3 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .form-control {
+            height: 45px;
+            padding-left: 50px;
+            border: 1px solid #DCDCDC;
+            border-radius: 12px;
+            font-size: 16px;
+            &::placeholder {
+                color: #A7A7A7;
+                font-size: 14px;
+            }
+        }
+        textarea.form-control {
+            height: 150px;
+        }
+        .form-icon {
+            position: absolute;
+            max-width: 22px;
+            left: 15px
+        }
+    }
+    .form-check-input {
+        border: 0;
+    }
+    .form-check-label {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 5px;
+        a {
+            color: #000;
+            border-bottom: 1px solid $blue
+        }
+    }
+    .btn {
+        width: 100%;
+        max-width: 250px
+    }
+}
+
+.inner-title {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.btn-outline-primary {
+    border: 3px solid $blue;
+    letter-spacing: 0.6px;
+    color: $blue;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 0;
+    padding: 12px 12px;
+}
+
+.tms-contact {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    p {
+        color: #000;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .inner-title {
+        margin-bottom: 20px;
+    }
+    @media (min-width:992px) {
+        .inner-title {
+            max-width: 330px;
+        }
+        .row {
+            justify-content: space-between;
+        }
+        .col-lg-auto,
+        .col-lg {
+            max-width: 550px
+        }
+    }
+    form {
+        .form-control {
+            border-color: transparent;
+        }
+    }
+}
+
+
+/** slick style **/
+
+.slick-slider {
+    .slick-arrow {
+        border: 2px solid $blue;
+        top: 100%;
+        width: 85px;
+        padding: 15px 5px;
+        transition: all 0.3s ease-in-out;
+        &.slick-prev {
+            left: calc(50% - 115px);
+            &::before {
+                content: "\f12c";
+                font-family: bootstrap-icons !important;
+                color: $blue;
+                font-size: 30px;
+                line-height: 0;
+            }
+        }
+        &.slick-next {
+            right: calc(50% - 90px);
+            &::before {
+                content: "\f135";
+                font-family: bootstrap-icons !important;
+                color: $blue;
+                // font-weight: 900 !important;
+                font-size: 30px;
+                line-height: 0;
+            }
+        }
+        &:hover {
+            background: $blue;
+            &::before {
+                color: #fff !important;
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -45px;
+        li {
+            width: auto;
+            height: auto;
+            button {
+                width: 15px;
+                height: 15px;
+                border: 2px solid $blue;
+                border-radius: 8px;
+                border-radius: 50%;
+                &::before {
+                    display: none
+                }
+            }
+            &.slick-active {
+                button {
+                    width: 39px;
+                    background: $blue;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
